@@ -26,8 +26,8 @@ jobs:
       - name: SSH into VM and deploy
         uses: appleboy/ssh-action@v0.1.9
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
+          host: 34.80.163.126
+          username: atod
           key: ${{ secrets.SSH_KEY }}
           script: |
             docker pull gcr.io/your-project/nextjs-app:${{ github.ref_name }}
